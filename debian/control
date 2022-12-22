@@ -1,0 +1,35 @@
+Source: libx86emu
+Maintainer: Sebastien Badia <sbadia@debian.org>
+Uploaders: Tomasz Buchert <tomasz@debian.org>
+Section: libs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/debian/libx86emu
+Vcs-Git: https://salsa.debian.org/debian/libx86emu.git
+Homepage: https://github.com/wfeldt/libx86emu
+Rules-Requires-Root: no
+
+Package: libx86emu3
+Architecture: any-amd64 any-i386 alpha armel armhf ia64
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: x86 emulation library
+ Small x86 emulation library with focus of easy usage and
+ extended execution logging functions. The library features
+ an API to create emulation objects for x86 architecture.
+ .
+ This package contains the library.
+
+Package: libx86emu-dev
+Architecture: any-amd64 any-i386 alpha armel armhf ia64
+Multi-Arch: same
+Section: libdevel
+Depends: libx86emu3 (= ${binary:Version}), ${misc:Depends}
+Description: x86 emulation library (development files)
+ Small x86 emulation library with focus of easy usage and
+ extended execution logging functions. The library features
+ an API to create emulation objects for x86 architecture.
+ .
+ This package contains the development files.

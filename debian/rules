@@ -1,0 +1,27 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export DEB_BUILD_MAINT_OPTIONS=hardening=+bindnow
+DPKG_EXPORT_BUILDFLAGS=1
+include /usr/share/dpkg/buildflags.mk
+
+include /usr/share/dpkg/architecture.mk
+export LIBDIR=/usr/lib/$(DEB_HOST_MULTIARCH)
+
+include /usr/share/dpkg/pkg-info.mk
+VERSION ?= $(shell echo '$(DEB_VERSION)' | sed -e 's/^[[:digit:]]*://' -e 's/[-].*//')
+
+# disable tests
+override_dh_auto_test:
+
+%:
+	dh $@
+
+override_dh_missing:
+	dh_missing --fail-missing
+
+override_dh_installchangelogs:
+	dh_installchangelogs debian/CHANGELOG
+
+changelog:
+	./debian/gen-upstream-changelog.sh $(VERSION)
