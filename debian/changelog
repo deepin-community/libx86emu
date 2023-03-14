@@ -1,0 +1,145 @@
+libx86emu (3.1-2) unstable; urgency=medium
+
+  * d/control:
+    + Use my Debian email address
+    + Bump Standards-Version to 4.5.1 (no changes needed)
+    + Bump debhelper compatibility level to 13
+  * d/patches: added DEP-3 headers (patch-not-forwarded-upstream)
+  * d/rules: Fix debian-rules-parses-dpkg-parsechangelog
+
+ -- Sebastien Badia <sbadia@debian.org>  Tue, 05 Jan 2021 17:40:59 +0100
+
+libx86emu (3.1-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Rely on pre-initialized dpkg-architecture variables.
+  * Update standards version to 4.5.0, no changes needed.
+
+  [ Tomasz Buchert ]
+  * Updated upstream changelog
+  * Fix debian/patches
+  * Migrate libx86emu2 to libx86emu3
+
+ -- Tomasz Buchert <tomasz@debian.org>  Wed, 06 May 2020 14:56:07 +0200
+
+libx86emu (2.4-1) unstable; urgency=medium
+
+  * New upstream version 2.4
+  * Updated upstream changelog
+  * Update std-ver to 4.4.0 (no changes needed)
+  * Upload to unstable
+
+ -- Tomasz Buchert <tomasz@debian.org>  Thu, 22 Aug 2019 14:26:56 +0200
+
+libx86emu (2.2-1) experimental; urgency=medium
+
+  * New upstream version 2.2
+
+ -- Tomasz Buchert <tomasz@debian.org>  Sat, 30 Mar 2019 11:33:17 +0100
+
+libx86emu (2.1-1) unstable; urgency=medium
+
+  * New upstream version 2.1
+
+ -- Tomasz Buchert <tomasz@debian.org>  Sat, 08 Sep 2018 17:30:55 +0200
+
+libx86emu (2.0-1) unstable; urgency=medium
+
+  * New upstream version 2.0
+  * Migrated libx86emu1 to libx86emu2
+
+ -- Tomasz Buchert <tomasz@debian.org>  Thu, 02 Aug 2018 17:00:57 +0800
+
+libx86emu (1.14-2) unstable; urgency=medium
+
+  * set version (Closes: #899280)
+
+ -- Tomasz Buchert <tomasz@debian.org>  Wed, 30 May 2018 21:21:57 +0200
+
+libx86emu (1.14-1) unstable; urgency=medium
+
+  * d/control: update vcs links to salsa
+  * switch to dh compat 11
+  * fix insecure-copyright-format-uri
+  * New upstream version 1.14
+
+ -- Tomasz Buchert <tomasz@debian.org>  Sat, 19 May 2018 15:20:51 +0200
+
+libx86emu (1.12-1) unstable; urgency=medium
+
+  * d/control: use debhelper 10
+  * d/watch: use watch version 4
+  * New upstream version 1.12
+  * Updated upstream changelog
+  * Bumped Standards-Version to 4.0.0
+
+ -- Tomasz Buchert <tomasz@debian.org>  Tue, 19 Sep 2017 00:14:52 +0200
+
+libx86emu (1.11-2) unstable; urgency=medium
+
+  * d/*.docs: add README.md to dev package (closes: #829031)
+
+ -- Tomasz Buchert <tomasz@debian.org>  Sat, 09 Jul 2016 20:12:03 +0200
+
+libx86emu (1.11-1) unstable; urgency=medium
+
+  [ Tomasz Buchert ]
+  * Imported Upstream version 1.11
+
+ -- Tomasz Buchert <tomasz@debian.org>  Sat, 25 Jun 2016 11:08:47 +0200
+
+libx86emu (1.10-1) unstable; urgency=medium
+
+  * Updated upstream changelog
+  * Imported Upstream version 1.10
+  * Bumped Standards-Version to 3.9.8
+
+ -- Tomasz Buchert <tomasz@debian.org>  Sun, 15 May 2016 15:06:13 +0200
+
+libx86emu (1.6-1) unstable; urgency=medium
+
+  [ Tomasz Buchert ]
+  * d/*: wrap and sort
+
+  [ Sebastien Badia ]
+  * Imported Upstream version 1.6
+  * d/control:
+      Update debhelper dependency
+      Bump  Standards-Version to 3.9.7 (no changes)
+      Update Vcs-git field (use https everywhere)
+  * d/copyright: Fix copyright dates
+  * Updated upstream changelog
+  * d/rules: Fix Hardening build flags (bindnow)
+
+ -- Sebastien Badia <seb@sebian.fr>  Sat, 05 Mar 2016 17:46:21 -0300
+
+libx86emu (1.5-1) unstable; urgency=medium
+
+  [ Sebastien Badia ]
+  * d/control: Many changes
+    * Bump Standards-version (no changes)
+    * Update VCS-Browser URL (use cgit and https)
+
+  [ Tomasz Buchert ]
+  * Imported Upstream version 1.5
+
+ -- Tomasz Buchert <tomasz@debian.org>  Tue, 23 Jun 2015 19:24:09 +0200
+
+libx86emu (1.4-2) unstable; urgency=medium
+
+  [ Tomasz Buchert ]
+  * "gbp pq"-friendly patches
+  * restricted build to subset of architectures (refs: #733578)
+
+  [ Johann Felix Soden ]
+  * Add "alpha" to architecture list.
+
+ -- Sebastien Badia <seb@sebian.fr>  Sun, 16 Mar 2014 13:00:34 +0100
+
+libx86emu (1.4-1) unstable; urgency=low
+
+  * Initial release (closes: #733577)
+
+ -- Sebastien Badia <seb@sebian.fr>  Thu, 23 Jan 2014 23:44:19 +0100
