@@ -8,8 +8,8 @@ include /usr/share/dpkg/buildflags.mk
 include /usr/share/dpkg/architecture.mk
 export LIBDIR=/usr/lib/$(DEB_HOST_MULTIARCH)
 
-include /usr/share/dpkg/pkg-info.mk
-VERSION ?= $(shell echo '$(DEB_VERSION)' | sed -e 's/^[[:digit:]]*://' -e 's/[-].*//')
+DEBVERS ?= $(shell dpkg-parsechangelog | sed -n -e 's/^Version: //p')
+VERSION ?= $(shell echo '$(DEBVERS)' | sed -e 's/^[[:digit:]]*://' -e 's/[-].*//')
 
 # disable tests
 override_dh_auto_test:

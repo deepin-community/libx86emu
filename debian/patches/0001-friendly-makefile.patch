@@ -1,7 +1,6 @@
 From: Tomasz Buchert <tomasz@debian.org>
 Date: Wed, 6 May 2020 14:53:19 +0200
 Subject: friendly makefile
-Forwarded: not-needed
 
 ---
  .gitignore |  1 -

@@ -1,10 +1,10 @@
 Source: libx86emu
-Maintainer: Sebastien Badia <sbadia@debian.org>
+Maintainer: Sebastien Badia <seb@sebian.fr>
 Uploaders: Tomasz Buchert <tomasz@debian.org>
 Section: libs
 Priority: optional
-Build-Depends: debhelper-compat (= 13)
-Standards-Version: 4.5.1
+Build-Depends: debhelper (>= 12), debhelper-compat (= 12)
+Standards-Version: 4.5.0
 Vcs-Browser: https://salsa.debian.org/debian/libx86emu
 Vcs-Git: https://salsa.debian.org/debian/libx86emu.git
 Homepage: https://github.com/wfeldt/libx86emu
